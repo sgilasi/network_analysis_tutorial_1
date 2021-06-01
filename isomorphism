@@ -1,0 +1,5 @@
+import networkx.algorithms.isomorphism  as iso
+G1 = nx.cycle_graph(3)
+nx.draw_shell(G, with_labels=True, font_weight='bold')
+G2= nx.Graph([('a','b') , ('b','c') , ('c' , 'a')])
+nx.is_isomorphic(G1,G2)
